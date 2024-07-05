@@ -1,0 +1,7 @@
+checkpoints
+outputs
+tensorboard
+data
+log
+tensorboard
+dev_log

@@ -1,0 +1,25 @@
+{
+    "dataset_name": "JNLPBA",
+    "model_name": "BioBART-large",
+    "trainset_path": "./data/SingleType/JNLPBA.jsonl",
+    "testset_folder": "./data/MutiType/test",
+    "model_folder": "/home/sda/wangzhijun/AllModels/bartt",
+    "save_checkpoint_folder": "./checkpoints",
+    "save_predict_folder": "./outputs",
+    "save_log_folder": "./log",
+    "save_tenserboard_folder": "./tenserboard",
+
+    "batch_size": 6,
+    "batch_grad_accumlate": 9,
+    "epoch_num": 50,
+    "max_lr": 1e-5,
+    "warm_up_rate": 0.1,
+    "get_data_scale": 1.0, 
+    "generate_hyper": {
+        "num_beams": 3,
+        "max_new_tokens": 256,
+        "early_stopping": "False",
+        "length_penalty" : 0,
+        "no_repeat_ngram_size" : 0
+    }
+}
